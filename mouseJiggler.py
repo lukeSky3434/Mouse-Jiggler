@@ -6,13 +6,6 @@ import time, threading
 #Installation
 #py -m pip install pyautogui
 
-def execute_login():
-    print('login at {}'.format(datetime.now))
-
-def execute_logout():
-    print('logout at {}'.format(datetime.now))
-
-
 def main():
     print(pyautogui.position())
     size = pyautogui.size()
