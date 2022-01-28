@@ -29,16 +29,19 @@ def main():
 
     print('Initialized Successfully at {}'.format(datetime.now()))
 
+#    print('start x {} start y'.format(startx, starty));
+
     while True:
 
         x = x + xit
         y = y + yit
-        if(x > endx or x < startx):
+        if(x > endx or x < startx or y > endy or y < starty):
             x = startx
-        if(y > endy or y < starty):
             y = starty
+            #print('x set to {}'.format(startx));
+            #print('y set to {}'.format(starty));
         pyautogui.moveTo(x, y, duration=num_seconds)
-
+#        print('move to {}, {}'.format(x, y));
         time.sleep(5)
 
         if(x + xit > endx):
